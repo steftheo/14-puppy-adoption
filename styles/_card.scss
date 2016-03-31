@@ -1,0 +1,32 @@
+.card {
+  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background-color: blue;
+
+  height: 17rem;
+}
+
+.card__info {
+  display: flex;
+
+}
+
+.card__form {
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.card__text-box {
+  border-bottom: 1px solid black;
+  height: 2.5rem;
+  width: 30rem;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-left: 15.5rem;
+  padding-right: 2rem;
+}
