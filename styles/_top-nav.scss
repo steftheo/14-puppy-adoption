@@ -4,7 +4,7 @@
   display: flex;
   // flex-direction: row;
 
-  background-color: red;
+  background-color: #f0771f;
   height: 3rem;
   margin: 0 auto;
 }
@@ -22,8 +22,28 @@
   max-width: 90%;
 
   margin: 0;
+  color: white;
 }
 
-.fa {
+.fa-plus {
   margin-left: 50rem;
+  display: flex;
+  position: relative;
+
+  &:hover {
+    transform: rotate(90%);
+
+    .top-nav__form {
+      display: flex;
+    }
+
+  }
+}
+
+.top-nav__form {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: gray;
+  margin: 0 auto;
 }

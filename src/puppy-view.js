@@ -5,13 +5,13 @@ export default class PuppyView {
     this.el = el;
     this.info = info;
 
-    this.render();
+    // this.render();
     this.renderDogImage();
     this.renderDogInfo();
   }
 
   renderDogImage() {
-    document.querySelector(`.card__image`).innerHTML = `<img src="${this.info.photoUrl}" alt="" class="puppy-img">`;
+    this.el.querySelector(`.card__image`).setAttribute(`src`, this.info[0].photoUrl);
   }
 
   renderDogInfo() {
