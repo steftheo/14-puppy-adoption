@@ -6,11 +6,56 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <div class="header">
+    <nav class="top-nav">
+      <h3 class="title">Puppies</h3>
+      <i class="fa fa-plus"></i>
+    </nav>
+  </div>
+
+    <div class="top-nav__form">
+      <h4 class="form__title">Add a new puppy</h4>
+      <div class="form-box">
+        <p class="form__name">Name</p>
+        <p class="form__age">Age</p>
+        <p class="form__photo">Photo URL</p>
+        <p class="form__profile">Profile</p>
+      </div>
+      <button class="form__save">Save</button>
+    </div>
+
+  <div class="main">
+    <div class="card">
+      <div class="card__info">
+        <img src="http://placecage.com/200/200" alt="" class="card__image">
+        <div class="card__form">
+          <div class="card__text-box">
+            <p class="card__text-header">Name</p>
+          </div>
+          <div class="card__text-box">
+              <p class="card__text-header">Age</p>
+          </div>
+          <div class="card__text-box">
+            <p class="card__text-header">Photo URL</p>
+          </div>
+          <div class="card__text-box">
+            <p class="card__text-header">Profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__buttons">
+        <button class="card__delete">Delete</button>
+        <button class="card__update">Update</button>
+      </div>
+    </div>
+  </div>
+
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    require("index")();
   </script>
 </body>
 </html>

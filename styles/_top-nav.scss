@@ -1,0 +1,49 @@
+@import 'box-sizing';
+
+.header {
+  display: flex;
+  // flex-direction: row;
+
+  background-color: #f0771f;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 3rem;
+  padding-left: 4rem;
+
+  max-width: 90%;
+
+  margin: 0;
+  color: white;
+}
+
+.fa-plus {
+  margin-left: 50rem;
+  display: flex;
+  position: relative;
+
+  &:hover {
+    transform: rotate(90%);
+
+    .top-nav__form {
+      display: flex;
+    }
+
+  }
+}
+
+.top-nav__form {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: gray;
+  margin: 0 auto;
+}
